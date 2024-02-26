@@ -16,6 +16,7 @@ import Start from "pages/Authentication/Start";
 // import AdvertDetails from "pages/Dashboard/AdvertDetails";
 // import FAQs from "pages/Dashboard/FAQs";
 import Pages404 from "pages/Dashboard/Page404";
+import Dashboard from "pages/Dashboard";
 // import StoreDetails from "pages/Dashboard/StoreDetails";
 // import VerifyNewEmail from "pages/Dashboard/VerifyNewEmail";
 
