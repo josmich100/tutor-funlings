@@ -1,0 +1,102 @@
+//
+// accordion.scss
+//
+
+.custom-accordion {
+  .accordion-list {
+    display: flex;
+    border-radius: 7px;
+    background-color: $gray-300;
+    padding: 12px 20px;
+    color: $body-color;
+    font-weight: $font-weight-semibold;
+    align-items: center;
+    justify-content: space-between;
+
+    &.collapsed {
+      i.accor-plus-icon {
+        &:before {
+          content: "\F0415";
+        }
+      }
+    }
+
+    .accor-plus-icon {
+      display: inline-block;
+      font-size: 16px;
+      height: 24px;
+      width: 24px;
+      line-height: 22px;
+      background-color: $card-bg;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+
+  a {
+
+    &.collapsed {
+      i.accor-down-icon {
+        &:before {
+          content: "\F0140";
+        }
+      }
+    }
+  }
+
+  .card-body {
+    color: $text-muted;
+  }
+}
+
+.tabled-accordion {
+  background-color: white;
+  border-radius: 8px;
+
+  .accordion-item {
+    color: $dark;
+    background-color: $gray-200;
+    border-radius: 0px;
+    box-shadow: none;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 0.25rem;
+
+    .accordion-body {
+      padding: 0.5rem 0.75rem;
+    }
+
+    .accordion-header {
+      .accordion-button {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        color: $dark;
+      }
+    }
+
+    &:nth-child(odd),
+    &:focus {
+      .accordion-button {
+        background-color: $orange-200;
+      }
+    }
+
+    &:nth-child(even) {
+      .accordion-button {
+        background-color: $gray-200;
+      }
+    }
+  }
+
+  &.accordion-warning {
+    .accordion-item {
+
+      &:nth-child(odd),
+      &:focus {
+        .accordion-button {
+          background-color: $brown-200;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// 
+// _pagination.scss
+// 
+
+// Pagination rounded (Custom)
+.pagination-rounded {
+  .page-link {
+    border-radius: 30px !important;
+    margin: 0 3px !important;
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    text-align: center;
+    line-height: 32px;
+  }
+}
+
+.pagination {
+  .page-item {
+    .page-link {
+      border: 0.5px solid $gray-200;
+    }
+
+    &.active {
+      .page-link {
+        background-color: $light;
+        color: $primary;
+      }
+    }
+
+    &:first-child {
+      .page-link {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+    }
+
+    &:last-child {
+      .page-link {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+  }
+
+  .page-link {
+    background-color: $primary;
+    color: $white;
+    border-radius: 0px;
+  }
+
+  .page-item {
+    &.disabled {
+      .page-link {
+        background-color: $orange-300;
+      }
+    }
+  }
+
+  &.pagination-warning {
+    .page-link {
+      background-color: $warning;
+    }
+
+    .page-item {
+      &.active {
+        .page-link {
+          color: $warning;
+        }
+      }
+
+      &.disabled {
+        .page-link {
+          background-color: $brown-300;
+        }
+      }
+    }
+  }
+}

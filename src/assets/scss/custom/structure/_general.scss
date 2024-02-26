@@ -1,0 +1,14 @@
+.transitioning-div {
+  -webkit-transition: $transition-custom;
+  -moz-transition: $transition-custom;
+  -o-transition: $transition-custom;
+  transition: $transition-custom;
+}
+
+.dotted-border {
+  border-style: dotted;
+}
+
+.dashed-border {
+  border-style: dashed;
+}

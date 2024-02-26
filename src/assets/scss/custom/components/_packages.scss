@@ -1,0 +1,118 @@
+.package-container {
+  display: flex;
+  justify-content: center;
+  -webkit-transition: $transition-custom;
+  -moz-transition: $transition-custom;
+  -o-transition: $transition-custom;
+  transition: $transition-custom;
+}
+
+.package-item {
+  margin: 0.5rem 0.125rem;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 160px;
+  min-width: 140px;
+  -webkit-transition: $transition-custom;
+  -moz-transition: $transition-custom;
+  -o-transition: $transition-custom;
+  transition: $transition-custom;
+
+  &:hover {
+    .package-card {
+      border: 2px solid $warning;
+    }
+  }
+
+  @media (max-width: 992px) {
+    max-width: 140px;
+    min-width: 120px;
+  }
+}
+
+.package-history-item {
+  margin: 0.125rem;
+  padding: 0.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 120px;
+  min-width: 100px;
+  -webkit-transition: $transition-custom;
+  -moz-transition: $transition-custom;
+  -o-transition: $transition-custom;
+  transition: $transition-custom;
+
+  &:hover {
+    .package-card {
+      border: 2px solid $warning;
+    }
+  }
+
+  .package-price {
+    color: $primary;
+    font-size: 12px;
+
+    .price-value {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 992px) {
+    max-width: 100px;
+    min-width: 85px;
+  }
+}
+
+.package-card {
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  box-shadow: none;
+  border: 2px solid $gray-400;
+  background-color: $white;
+  cursor: pointer;
+  -webkit-transition: $transition-custom;
+  -moz-transition: $transition-custom;
+  -o-transition: $transition-custom;
+  transition: $transition-custom;
+
+  &.checked {
+    border: 2px solid $primary;
+    background-color: $primary;
+    color: white;
+
+    .package-text,
+    .package-price {
+      color: white;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .package-price {
+      font-size: 14px;
+
+      .price-value {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.package-price {
+  color: $primary;
+  font-size: 18px;
+
+  .price-value {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.title-rule {
+  width: 75%;
+  margin: 0.25rem 0rem;
+}
