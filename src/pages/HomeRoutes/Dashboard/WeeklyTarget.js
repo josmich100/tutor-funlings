@@ -6,14 +6,13 @@ import {
   CardText,
   CardTitle,
   Col,
-  Progress,
+  ProgressBar as Progress,
   Row,
 } from "react-bootstrap";
 
 const WeeklyTarget = () => {
   return (
     <React.Fragment>
-      {" "}
       <Card className="p-3">
         <CardBody>
           <CardTitle className="mb-0">Weekly Target</CardTitle>
@@ -23,7 +22,7 @@ const WeeklyTarget = () => {
             <div className="my-5">
               <p className="text-muted mb-1">Your points</p>
               <h3 className="bg-success text-bg-success w-50 py-2 mx-auto rounded">
-                -200
+                200
               </h3>
             </div>
 

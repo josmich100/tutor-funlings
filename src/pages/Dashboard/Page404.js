@@ -6,16 +6,15 @@ import MetaTags from "react-meta-tags";
 //Import Images
 import DefaultValues from "constants/DefaultValues";
 
-
 const Pages404 = () => {
   return (
     <React.Fragment>
       <div className="page-content">
         <MetaTags>
-          <title>Error | Marquee</title>
+          <title>Error | Funlings</title>
         </MetaTags>
         <Container>
-          <div className="text-center mb-3">
+          <div className="text-center mb-3 h-100">
             <h1 className="display-3 font-weight-medium">
               4<i className="bx bx-buoy bx-spin text-primary display-4" />4
             </h1>
@@ -27,7 +26,12 @@ const Pages404 = () => {
             </div>
           </div>
           <div className="d-flex justify-content-center">
-            <img src={DefaultValues.page_404} alt="" className="" height={200} />
+            <img
+              src={DefaultValues.page_404}
+              alt=""
+              className=""
+              height={200}
+            />
           </div>
         </Container>
       </div>

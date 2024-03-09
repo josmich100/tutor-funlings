@@ -1,18 +1,17 @@
 import React from "react";
 
-import { Card, CardBody, Col, Progress, Row } from "react-bootstrap";
+import { Card, CardBody, Col, ProgressBar, Row } from "react-bootstrap";
 
-import avatar1 from "../../../assets/images/avatar-1.png";
+import avatar1 from "../../../assets/images/avatar-1.jpg";
 
 const WelcomeComp = ({ user }) => {
   return (
     <React.Fragment>
-      {" "}
       <Card className="p-3">
         <CardBody className="pt-4">
           <Row>
             <Col sm="4">
-              <Row>
+              <Row className="items-center">
                 <Col xs="4">
                   <div className="mb-2">
                     <img
@@ -21,20 +20,19 @@ const WelcomeComp = ({ user }) => {
                       className="img-thumbnail rounded-circle"
                     />
                   </div>
-                  <a href="#" className="small">
-                    {" "}
+                  <a href="#" className="small btn btn-primary">
                     Upload profile picture
                   </a>
                 </Col>
-                <Col xs="8">
-                  <h5 className="font-size-15">{user?.username}</h5>
-                  <p className="text-muted mb-0">Grade 6</p>
+                <Col xs="4 mt-4 ">
+                  <h5 className="font-size-15">{user?.fullName}</h5>
+                  <p className="text-muted mb-0">{user?.email}</p>
                 </Col>
               </Row>
             </Col>
 
             <Col sm="4" className="pt-4">
-              <Progress color="success" value={5}></Progress>
+              <ProgressBar color="success" value={5}></ProgressBar>
               <p className="mt-1">870 points remaining for Bronze level</p>
             </Col>
 

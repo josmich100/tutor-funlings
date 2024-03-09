@@ -2,7 +2,7 @@ import React from "react";
 
 import { Card, CardBody, Col, Row } from "react-bootstrap";
 
-import avatar1 from "../../../assets/images/avatar-1.png";
+import avatar1 from "../../../assets/images/avatar-1.jpg";
 
 const GetHelp = () => {
   return (

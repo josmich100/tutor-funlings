@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-// import ReferralComp from "../Invite/ReferralComp";
-// import ActivityComp from "./ActivityComp";
-// import ClassBadges from "./ClassBadges";
-// import ClassRanks from "./ClassRanks";
-// import CurrentModule from "./CurrentModule";
-// import GetHelp from "./GetHelp";
-// import ProgressComp from "./ProgressComp";
-// import RecentlyReviewed from "./RecentlyReviewed";
-// import WeeklyTarget from "./WeeklyTarget";
-// import WelcomeComp from "./WelcomeComp";
+import ReferralComp from "../Invite/ReferralComp";
+import ActivityComp from "./ActivityComp";
+import ClassBadges from "./ClassBadges";
+import ClassRanks from "./ClassRanks";
+import CurrentModule from "./CurrentModule";
+import GetHelp from "./GetHelp";
+import ProgressComp from "./ProgressComp";
+import RecentlyReviewed from "./RecentlyReviewed";
+import WeeklyTarget from "./WeeklyTarget";
+import WelcomeComp from "./WelcomeComp";
 
 // import { get, ref } from "firebase/database";
 // import { getFirebaseBackend } from "helpers/firebase_helper";
@@ -39,7 +39,7 @@ const Home = (props) => {
           /> */}
 
           <Row>
-            {/* <WelcomeComp user={userProfile} />
+            <WelcomeComp user={userProfile} />
             <Row className="w-100">
               <Col xl="4">
                 <ClassRanks user={userProfile} />
@@ -56,7 +56,7 @@ const Home = (props) => {
             <ProgressComp user={userProfile} />
             <CurrentModule />
             <RecentlyReviewed user={userProfile} />
-            <ReferralComp /> */}
+            <ReferralComp />
           </Row>
         </Container>
       </div>

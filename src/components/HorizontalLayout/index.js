@@ -39,7 +39,7 @@ const Layout = (props) => {
     const title = props.location.pathname;
     let currentage = title.charAt(1).toUpperCase() + title.slice(2);
 
-    document.title = "Funlings Student";
+    document.title = "Funlings Teacher";
   }, [props.location.pathname]);
 
   useEffect(() => {

@@ -1,6 +1,7 @@
+import { Input } from "@mui/base";
 import React from "react";
 
-import { Button, Card, CardBody, Col, Form, Input, Row } from "react-bootstrap";
+import { Button, Card, CardBody, Col, Form, Row } from "react-bootstrap";
 
 // react-circular-progressbar
 
@@ -64,7 +65,7 @@ const ReferralComp = () => {
                         <Input
                           name="invitation_link"
                           placeholder="something@idk.cool"
-                          value="https://student-funlings.com/referral/RuthKimani/invite/?utm_medium=6824ghjgkfs7"
+                          value="https://student-funlings.com/referral/invite/?utm_medium=6824ghjgkfs7"
                           type="text"
                         />
                       </Col>

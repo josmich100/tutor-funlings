@@ -4,10 +4,7 @@ import UserProfile from "pages/Authentication/user-profile";
 // Authentication related pages
 import Login from "pages/Authentication/Login";
 import Logout from "pages/Authentication/Logout";
-import Register from "pages/Authentication/Register";
 import ForgetPwd from "pages/Authentication/ForgetPassword";
-import Activation from "pages/Authentication/Activation";
-import NewPassword from "pages/Authentication/NewPassword";
 import Start from "pages/Authentication/Start";
 
 // Dashboard
@@ -16,22 +13,24 @@ import Start from "pages/Authentication/Start";
 // import AdvertDetails from "pages/Dashboard/AdvertDetails";
 // import FAQs from "pages/Dashboard/FAQs";
 import Pages404 from "pages/Dashboard/Page404";
-import Dashboard from "pages/Dashboard";
+
+import Home from "pages/HomeRoutes/Dashboard";
+import Projects from "pages/HomeRoutes/Projects";
+import Quizzes from "pages/HomeRoutes/Quizzes";
+import Competitions from "pages/HomeRoutes/Competitions";
+import Lessons from "pages/HomeRoutes/Lessons";
+import Invite from "pages/HomeRoutes/Invite";
 // import StoreDetails from "pages/Dashboard/StoreDetails";
 // import VerifyNewEmail from "pages/Dashboard/VerifyNewEmail";
 
 const userRoutes = [
-  { path: "/dashboard", component: Dashboard },
-  // { path: "/contact", component: ContactUs },
-  // { path: "/details/:id", component: AdvertDetails },
-  // { path: "/faqs", component: FAQs },
-  // { path: "/store", component: StoreDetails },
-  // { path: "/profile", component: UserProfile },
-  // { path: "/verifyNewEmail", component: VerifyNewEmail },
+  { path: "/dashboard", component: Home },
+  { path: "/projects", component: Projects },
+  { path: "/quizzes", component: Quizzes },
+  { path: "/competitions", component: Competitions },
+  { path: "/lessons", component: Lessons },
+  { path: "/invite", component: Invite },
   { path: "", component: Pages404 },
-
-  // this route should be at the end of all other routes
-  // { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
 ];
 
 const authRoutes = [

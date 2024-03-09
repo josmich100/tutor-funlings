@@ -12,7 +12,7 @@ import {
 //Simple bar
 import SimpleBar from "simplebar-react";
 
-import avatar1 from "../../../assets/images/avatar-1.png";
+import avatar1 from "../../../assets/images/avatar-1.jpg";
 
 const ClassRanks = ({ user }) => {
   const [activeTab, setactiveTab] = useState("1");
