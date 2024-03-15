@@ -108,7 +108,7 @@ const Start = () => {
                 peers.
               </p>
               <Link
-                to={{ pathname: "https://www.ngamia.africa/marquee/" }}
+                to={{ pathname: "https://funlings-ent.com/" }}
                 className="rounded-pill bg-primary text-white fs-4 fw-bold py-2 px-4"
               >
                 Learn More

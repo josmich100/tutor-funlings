@@ -2,14 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
 import { map } from "lodash";
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  Col,
-  UncontrolledTooltip,
-} from "react-bootstrap";
+import { Badge, Button, Card, CardBody, Col } from "react-bootstrap";
 import images from "assets/images";
 import companies from "assets/images/companies";
 

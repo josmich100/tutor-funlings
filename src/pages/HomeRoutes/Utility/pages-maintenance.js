@@ -6,8 +6,8 @@ import { Container, Row, Col, Card, CardBody } from "react-bootstrap";
 import CardMaintenance from "./card-maintenance";
 
 //Import Images
-import maintenance from "../../assets/images/maintenance.svg";
-import logo from "../../assets/images/logo-dark.png";
+import maintenance from "../../../assets/images/maintenance.svg";
+import logo from "../../../assets/images/logo-dark.png";
 
 const PagesMaintenance = () => {
   //meta title

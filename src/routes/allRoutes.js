@@ -15,21 +15,21 @@ import Start from "pages/Authentication/Start";
 import Pages404 from "pages/Dashboard/Page404";
 
 import Home from "pages/HomeRoutes/Dashboard";
-import Projects from "pages/HomeRoutes/Projects";
-import Quizzes from "pages/HomeRoutes/Quizzes";
-import Competitions from "pages/HomeRoutes/Competitions";
+// import Projects from "pages/HomeRoutes/Projects";
+// import Quizzes from "pages/HomeRoutes/Quizzes";
+// import Competitions from "pages/HomeRoutes/Competitions";
 import Lessons from "pages/HomeRoutes/Lessons";
-import Invite from "pages/HomeRoutes/Invite";
+// import Invite from "pages/HomeRoutes/Invite";
 // import StoreDetails from "pages/Dashboard/StoreDetails";
 // import VerifyNewEmail from "pages/Dashboard/VerifyNewEmail";
 
 const userRoutes = [
   { path: "/dashboard", component: Home },
-  { path: "/projects", component: Projects },
-  { path: "/quizzes", component: Quizzes },
-  { path: "/competitions", component: Competitions },
+  // { path: "/projects", component: Projects },
+  // { path: "/quizzes", component: Quizzes },
+  // { path: "/competitions", component: Competitions },
   { path: "/lessons", component: Lessons },
-  { path: "/invite", component: Invite },
+  // { path: "/invite", component: Invite },
   { path: "", component: Pages404 },
 ];
 

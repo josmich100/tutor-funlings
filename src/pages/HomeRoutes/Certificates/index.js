@@ -1,16 +1,8 @@
 import React from "react"
-import CertificateComp from "./CertificateComp"
-import CertificateList from "./CertificateList"
+import PropTypes from "prop-types"
 
 const Certificates = props => {
-  return (
-    <React.Fragment>
-      <div className="page-content">
-        <CertificateComp />
-        <CertificateList />
-      </div>
-    </React.Fragment>
-  )
+  return <div>Certificates</div>
 }
 
 Certificates.propTypes = {}

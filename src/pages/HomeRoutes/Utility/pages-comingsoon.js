@@ -6,8 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Countdown from "react-countdown";
 
 //Import Images
-import logo from "../../assets/images/logo-dark.png";
-import maintanence from "../../assets/images/coming-soon.svg";
+import logo from "../../../assets/images/logo-dark.png";
+import maintanence from "../../../assets/images/coming-soon.svg";
 
 const PagesComingsoon = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
